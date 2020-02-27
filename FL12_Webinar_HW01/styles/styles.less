@@ -1,0 +1,40 @@
+@import "variables.less";
+
+.headings {
+  color: @blue;
+  font-weight: bold;
+  margin-top: 35px;
+}
+
+.navbar-light {
+  .navbar-nav {
+    .active {
+        @{bgcol}: @blue;
+      & > .nav-link {
+        color: @white;
+      }
+    }
+  }
+}
+
+.related-classes__figure {
+  border: 1px solid @transp;
+  padding-bottom: 10px;
+  &--cardio {
+      @{bgcol}: @red;
+  }
+  &--fitness {
+      @{bgcol}: @blue;
+  }
+  &--zumba {
+      @{bgcol}: @orange;
+  }
+  &--bootcamp {
+      @{bgcol}: @green;
+  }
+}
+
+.footer {
+    @{bgcol}: @grey;
+  color: @white;
+}
